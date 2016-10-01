@@ -2,5 +2,7 @@
 permalink: /404.html
 ---
 <script>
-window.location = window.location.href.replace("sigma-extension.github.io", "crazypython.github.io/sigma-extension/")
+var url = window.location.href.replace("sigma-extension.github.io", "crazypython.github.io/sigma-extension/")
+window.history.pushState("", "", url);
+window.location = url
 </script>
